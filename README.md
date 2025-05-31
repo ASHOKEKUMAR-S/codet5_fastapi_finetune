@@ -1,13 +1,24 @@
-# CodeT5 FastAPI Fine-Tuning
+# Auto-Generated FastAPI Service with CodeT5
 
-This project fine-tunes the `Salesforce/codet5-small` model to generate FastAPI microservice code from natural language prompts using a `.jsonl` dataset.
+This repo demonstrates:
+- Fine-tuning CodeT5 on FastAPI prompt-output data
+- Generating FastAPI models and routes from table instructions
+- Generating unit and functional tests using pretrained models
+- Injecting everything into a working FastAPI template
+- Zipping and pushing the final product to GitHub
 
-## Files
-- `codet5_fastapi_finetune.ipynb`: Main Google Colab notebook for training.
-- `requirements.txt`: Required packages.
-- `.gitignore`: Standard Python and Colab-related ignores.
+## Project Structure
+```
+app/
+├── models.py
+├── routes.py
+├── db.py
+└── main.py
 
-## Quickstart
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/yourrepo/blob/main/codet5_fastapi_finetune.ipynb)
+tests/
+├── test_unit.py
+└── test_functional.py
 
-Upload this repo to your GitHub and open the notebook in Google Colab to start training.
+codet5_fastapi_pipeline.ipynb
+README.md
+```
